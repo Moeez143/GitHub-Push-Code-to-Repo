@@ -1,0 +1,55 @@
+----------------------------------------------------------------For GitHub------------------------------------------------------------------
+
+
+=> to push repo on gitHub
+Create repo on github
+
+
+=> create .gitignore file in project and add the files that you not want to push on gitHub like node_modules
+
+
+=> Now run command step by step
+
+
+--------------------------------------------------(First Time Pushing Project not in main )------------------------------------------------
+
+
+git init									=>	(this initilized the project to repo)
+git add .									=>	(this add all you changes and file in repo)
+git commit -m 'Your First Message Here'						=>	(this will commit the all code and file to your repo and with your message)
+git remote add origin 'Here the Link of Repo you Create at Very Start'		=> 	(this will add the local remote to you GitHub repo)
+git push origin master								=>	(this will push all you project to repo)
+
+
+
+this create master branch and push all code in it
+Now go to GitHub repo and refresh it and check in master branch
+
+
+=> Now when you do changes and and push changes in you repo then Only run this commmands
+
+git add .
+git commit -m 'Your Message Here'
+git push origin master
+
+
+
+------------------------------------------------(IF you wnat to push project in Main Branch)-----------------------------------------------
+
+
+=> main branch is protected branch that why this line need to add....by Default its push code in that branch you mention in last command
+
+
+git init									=>	(this initilized the project to repo)
+git add .									=>	(this add all you changes and file in repo)
+git commit -m 'Your First Message Here'						=>	(this will commit the all code and file to your repo and with your message)
+git branch -M main								=>	(this will add code in your main branch)
+git remote add origin 'Here the Link of Repo you Create at Very Start'		=> 	(this will add the local remote to you GitHub repo)
+git push origin main								=>	(this will push all you project to repo)
+
+
+=> Now when you do changes and and push changes in you repo then Only run this commmands
+
+git add .
+git commit -m 'Your Message Here'
+git push origin main
